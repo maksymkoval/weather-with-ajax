@@ -1,11 +1,10 @@
 $(document).ready(function(){
-  
     var weather= $('.weather')
     var now = new Date();
     const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
-weather.prepend('Current date: '+now.getDate()+' '+monthNames[now.getMonth()]+' '+now.getFullYear()+'<br>time: '+now.getHours () +':'+now.getMinutes() +'');
+weather.prepend('Current date: '+now.getDate()+' '+monthNames[now.getMonth()]+' '+now.getFullYear()+'<br> time: '+now.getHours () +':'+now.getMinutes() +'');
 $.ajax({
     type:'GET',
     url:'https://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19',
