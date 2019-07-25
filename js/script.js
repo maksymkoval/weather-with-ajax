@@ -6,7 +6,7 @@ $(document).ready(function(){
 weather.prepend('Current date: '+now.getDate()+'.'+now.getMonth()+'.'+now.getFullYear()+'');
 $.ajax({
     type:'GET',
-    url:'http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19',
+    url:'https://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19',
     success: function(data){
 console.log(data);
 weather.append('<div class="wrap">'+
